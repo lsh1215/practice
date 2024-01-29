@@ -1,8 +1,30 @@
 ## 익스텐션으로 편하게 북마크를 관리하고 이미지를 활용하자.
+> **GPT를 활용한 똑똑한 북마크와 URL 이미지 클립보드 활용**
+저희 서비스는 사용자가 **북마크를 통해 웹 페이지에 진입하기 전에** 간단한 정보를 확인할 수 있도록 **웹 페이지의 내용을 GPT로 요약**하여 제공하는 기능을 하는 **익스텐션**입니다. 그 뿐만 아니라, 특정 **URL에서 이미지를 추출하여 클립보드에 저장**하고 **활용**하는 기능도 함께 제공합니다.
 
 <br>
 
 ## What is Cliptab
+**1.GPT를 통한 북마크 요약 제공**
+```
+1. 북마크 생성 시 해당 북마크의 url page 스크래핑
+2. 스크래핑 된 data를 open api에게 넘기고 요약 정보 추출
+3. 요약 정보를 저장했다가 사용자의 설정에 따라 제공
+```
+**2.북마크 알림 기능**
+```
+1. celery beat로 스케쥴링 된 task 실행
+2. 알림이 필요한 북마크를 찾아 필요한 정보를 알림 테이블로 저장
+3. 사용자가 확인하지 않은 알림이 있으면 아이콘 핑 처리
+4. 아이콘 클릭 시 알림 페이지 제공
+```
+**3.클립보드를 활용한 url 이미지 활용**
+```
+1. url를 넣으면 해당 url page의 이미지 정보 스크래핑
+2. 이미지(url)를 클립보드에 저장하고 drag&drop, download 등으로 활용
+3. 새로 url을 넣으면 정해진 갯수를 넘어가는 데이터는 Queue 형식으로 자동 삭제 
+```
+<br>
 
 ## Table of Contents
 
@@ -41,6 +63,10 @@
 <br>
 
 ## API
+<img width="1446" alt="Untitled" src="https://github.com/lsh1215/practice/assets/75378429/9fb47b75-ce6c-46c3-bfe7-33ea93975d7a">
+<img width="1446" alt="Untitled (1)" src="https://github.com/lsh1215/practice/assets/75378429/144cb75b-7d25-4afb-973f-2addfeb72157">
+<img width="1446" alt="Untitled (2)" src="https://github.com/lsh1215/practice/assets/75378429/8027e4d1-4ec7-4803-bae8-752f83dad25a">
+<img width="1446" alt="Untitled (3)" src="https://github.com/lsh1215/practice/assets/75378429/4d505ea9-4760-4d11-8362-431886288e57">
 
 <br>
 
