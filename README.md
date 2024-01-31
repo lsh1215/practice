@@ -34,7 +34,7 @@
  - [Onboarding Page](#onboarding-page)
  - [System Architecture](#system-architecture)
  - [Tech Stack](#tech-stack)
- - [ERD](#erd)
+ - [ERD](#%EF%B8%8Ferd)
  - [API](#api)
  - [Monitoring Tools](#monitoring-tools)
  - [Member](#member)
