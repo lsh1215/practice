@@ -64,18 +64,20 @@
 <br>
 
 ## 🗄️ERD
-
 <img width="924" alt="image" src="https://github.com/lsh1215/practice/assets/75378429/1aadd423-b3cb-425b-8463-ecfd5d7d5e83">
 
 <br>
 
 ## 🔌API
+<img width="1287" alt="image" src="https://github.com/lsh1215/practice/assets/75378429/591b746b-deaf-4a59-ab0d-4efbefee1f2a">
+<img width="1288" alt="image" src="https://github.com/lsh1215/practice/assets/75378429/9d77fa48-748d-42ac-bc0f-57476a36911b">
+<img width="1288" alt="image" src="https://github.com/lsh1215/practice/assets/75378429/f85993c0-6868-49ac-9eae-754616d1120e">
+<img width="1288" alt="image" src="https://github.com/lsh1215/practice/assets/75378429/5d7dd03a-895f-454d-b1b8-641cd6f2abb1">
 
 
 <br>
 
-## 🖥️ Monitoring Tools
-
+## 🖥️Monitoring Tools
 > Prometheus & Grafana
 > 
 
