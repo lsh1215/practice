@@ -1,4 +1,4 @@
-## 익스텐션으로 편하게 북마크를 관리하고 이미지를 활용하자.
+# 유용한 북마크 관리, url 이미지 추출 익스텐션 ClipTab
 > **GPT를 활용한 똑똑한 북마크와 URL 이미지 클립보드 활용**
 저희 서비스는 사용자가 **북마크를 통해 웹 페이지에 진입하기 전에** 간단한 정보를 확인할 수 있도록 **웹 페이지의 내용을 GPT로 요약**하여 제공하는 기능을 하는 **익스텐션**입니다. 그 뿐만 아니라, 특정 **URL에서 이미지를 추출하여 클립보드에 저장**하고 **활용**하는 기능도 함께 제공합니다.
 
@@ -31,7 +31,7 @@
  - [System Architecture](#system-architecture)
  - [Tech Stack](#tech-stack)
  - [Service Flow](#service-flow)
- - [Onboarding Page](#onboarding-Page)
+ - [Onboarding Page](#onboarding-page)
  - [ERD](#erd)
  - [API](#api)
  - [Monitoring Tools](#monitoring-tools)
@@ -41,7 +41,7 @@
 <br>
 
 ## System Architecture
-![System Architecture](https://github.com/lsh1215/practice/assets/75378429/966e26d1-dd60-4f31-ae60-bbf02e7a20de)
+
 
 <br>
 
@@ -49,7 +49,7 @@
 
 | Frontend | Backend | DevOps | Monitoring | ETC |
 |:--------:|:-------:|:------:|:----------:|:---:|
-| <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/><br><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" /><br><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" /><br><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/> | <img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=Django&logoColor=white"/><br><img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white"> | <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/><br><img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=white"/> | <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=Grafana&logoColor=white"/><br><img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=Prometheus&logoColor=white"/> | <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white"/><br><img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/><br><img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/><br><img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=white"/><br><img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=flat&logo=GitHub Actions&logoColor=white"/><br> |
+| <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/><br><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" /><br><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" /><br><img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" /><br><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/><br><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/>| <img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=Django&logoColor=white"/><br><img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white"><br><img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white"><br><img src="https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white"> | <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white"/><br><img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=white"/><br><img src="https://img.shields.io/badge/Amazon RDS-527FFF?style=flat&logo=amazonrds&logoColor=white"/>| <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=Grafana&logoColor=white"/><br><img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=Prometheus&logoColor=white"/> | <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white"/><br><img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/><br><img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/><br><img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=white"/><br><img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=flat&logo=GitHub Actions&logoColor=white"/><br> |
 
 <br>
 
@@ -68,10 +68,7 @@
 <br>
 
 ## API
-<img width="1446" alt="Untitled" src="https://github.com/lsh1215/practice/assets/75378429/9fb47b75-ce6c-46c3-bfe7-33ea93975d7a">
-<img width="1446" alt="Untitled (1)" src="https://github.com/lsh1215/practice/assets/75378429/144cb75b-7d25-4afb-973f-2addfeb72157">
-<img width="1446" alt="Untitled (2)" src="https://github.com/lsh1215/practice/assets/75378429/8027e4d1-4ec7-4803-bae8-752f83dad25a">
-<img width="1446" alt="Untitled (3)" src="https://github.com/lsh1215/practice/assets/75378429/4d505ea9-4760-4d11-8362-431886288e57">
+
 
 <br>
 
