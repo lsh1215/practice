@@ -6,7 +6,7 @@
 
 <br>
 
-## What is Cliptab
+## ❓What is Cliptab
 **1.GPT를 통한 북마크 요약 제공**
 ```
 1. 북마크 생성 시 해당 북마크의 url page 스크래핑
@@ -28,7 +28,7 @@
 ```
 <br>
 
-## Table of Contents
+## 🗂️Table of Contents
 
  - [Service Flow](#service-flow)
  - [Onboarding Page](#onboarding-page)
@@ -42,20 +42,20 @@
 
 <br>
 
-## Service Flow
+## 🔍Service Flow
 
 <br>
 
-## Onboarding Page
+## 📄Onboarding Page
 
 <br>
 
-## System Architecture
+## 🚧System Architecture
 
 
 <br>
 
-## Tech Stack
+## 📚Tech Stack
 
 | Frontend | Backend | DevOps | Monitoring | ETC |
 |:--------:|:-------:|:------:|:----------:|:---:|
@@ -63,25 +63,25 @@
 
 <br>
 
-## ERD
+## 🗄️ERD
 
 <img width="924" alt="image" src="https://github.com/lsh1215/practice/assets/75378429/1aadd423-b3cb-425b-8463-ecfd5d7d5e83">
 
 <br>
 
-## API
+## 🔌API
 
 
 <br>
 
-## Monitoring Tools
+## 🖥️ Monitoring Tools
 
 > Prometheus & Grafana
 > 
 
 <br>
 
-## Member
+## 🙋🏻🙋Member
 <table width="1000">
     <thead>
     </thead>
@@ -206,4 +206,4 @@
 
 <br>
 
-## Blog
+## 📝Blog
